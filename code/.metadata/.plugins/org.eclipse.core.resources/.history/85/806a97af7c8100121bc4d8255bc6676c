@@ -1,0 +1,51 @@
+package com.itheima.sms;
+
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.telephony.SmsManager;
+import android.text.TextUtils;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+public class MainActivity extends Activity {
+	private EditText et_number;
+	private EditText et_content;
+	private Button bt_send;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        et_content = (EditText) findViewById(R.id.et_content);
+        et_number = (EditText) findViewById(R.id.et_number);
+        bt_send = (Button) findViewById(R.id.bt_send);
+        
+        
+        bt_send.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String number = et_number.getText().toString().trim();
+				String content = et_content.getText().toString().trim();
+				if(TextUtils.isEmpty(number)||TextUtils.isEmpty(content)){
+					Toast.makeText(MainActivity.this, "号码或者短信内容不能为空", Toast.LENGTH_LONG).show();
+					return ;
+				}
+				//发送短信
+				SmsManager smsManager = SmsManager.getDefault();
+				
+				List<String> smsMessages = smsManager.divideMessage(content);
+				for(String smsMessage : smsMessages){
+					smsManager.sendTextMessage(number, null, smsMessage, null, null);
+					Toast.makeText(MainActivity.this, "短信发送完毕", Toast.LENGTH_LONG).show();
+				}
+			}
+		});
+    }
+
+
+    
+}
