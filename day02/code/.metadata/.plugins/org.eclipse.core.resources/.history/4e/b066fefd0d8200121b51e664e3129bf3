@@ -1,0 +1,9 @@
+package com.itheima.junit.test;
+
+import android.test.AndroidTestCase;
+
+public class TestCalcService extends AndroidTestCase {
+
+	
+	
+}

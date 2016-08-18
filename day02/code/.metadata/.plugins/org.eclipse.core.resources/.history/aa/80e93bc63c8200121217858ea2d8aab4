@@ -1,0 +1,22 @@
+package com.itheima.weather.service;
+
+import java.io.InputStream;
+import java.util.List;
+
+import com.itheima.weather.domain.Weather;
+
+public class WeatherService {
+	/**
+	 * 解析获取天气信息
+	 * @param is 天气信息xml文件对应的流
+	 * @return
+	 */
+	public List<Weather> getWeather(InputStream is) {
+		//解析 天气的xml文件.
+		
+		//1.获取到一个xml文件的解析器.
+		
+		
+		
+	}
+}

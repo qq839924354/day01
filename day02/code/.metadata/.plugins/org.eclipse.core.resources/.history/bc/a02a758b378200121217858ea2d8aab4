@@ -1,0 +1,25 @@
+package com.itheima.xml;
+
+import com.itheima.xml.domain.SmsInfo;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		SmsInfo sms1 = new SmsInfo("你好啊  短信1", "5556", 1);
+		SmsInfo sms2 = new SmsInfo("你好啊  短信2", "5558", 1);
+		
+		
+		
+		
+	}
+
+
+
+}

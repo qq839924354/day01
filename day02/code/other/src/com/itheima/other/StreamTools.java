@@ -1,0 +1,26 @@
+package com.itheima.other;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class StreamTools {
+	/**
+	 * 工具方法 把流里面的内容 转化成 String 字符串
+	 * @param is 输入流
+	 * @return String 字符串
+	 * @throws IOException 
+	 */
+	public static String readFromStream(InputStream is) throws Exception{
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		byte[] buffer = new byte[1024];
+		int len = 0;
+		while((len = is.read(buffer))!=-1){
+			baos.write(buffer, 0, len);
+		}
+		is.close();
+		String result = baos.toString();
+		baos.close();
+		return result;
+	}
+}

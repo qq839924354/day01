@@ -1,0 +1,11 @@
+package com.itheima.service;
+
+public class CalcService {
+
+	public int add(int x ,int y){
+		
+		
+	}
+	
+	
+}

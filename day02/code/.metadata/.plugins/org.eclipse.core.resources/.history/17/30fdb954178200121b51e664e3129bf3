@@ -1,0 +1,15 @@
+package com.itheima.login.utils;
+
+import java.io.InputStream;
+
+public class StreamTools {
+
+	/**
+	 * 工具方法 把流里面的内容 转化成 String 字符串
+	 * @param is 输入流
+	 * @return
+	 */
+	public String readFromStream(InputStream is){
+		
+	}
+}

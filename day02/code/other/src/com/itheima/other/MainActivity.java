@@ -1,0 +1,46 @@
+package com.itheima.other;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+	public void readPravite(View view){
+		try {
+			File file = new File("/data/data/com.itheima.testmode/files/private.txt");
+			FileInputStream fis = new FileInputStream(file);
+			String text = StreamTools.readFromStream(fis);
+			Toast.makeText(this, text, 1).show();
+		}  catch (Exception e) {
+			Toast.makeText(this, "读取失败.", 1).show();
+			e.printStackTrace();
+		}
+	}
+
+	public void writetoreable(View view){
+		try {
+			File file = new File("/data/data/com.itheima.testmode/files/writeable.txt");
+			FileOutputStream fos = new FileOutputStream(file);
+			fos.write("被修改了...".getBytes());
+			fos.close();
+		}  catch (Exception e) {
+			Toast.makeText(this, "修改失败.", 1).show();
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

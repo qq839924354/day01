@@ -1,0 +1,42 @@
+package com.itheima.login;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
+
+public class MainActivity extends Activity {
+	private static final String TAG = "MainActivity";
+	private EditText et_name;
+	private EditText et_password;
+	private CheckBox cb_remember;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		et_name = (EditText) findViewById(R.id.et_name);
+		et_password = (EditText) findViewById(R.id.et_password);
+		cb_remember = (CheckBox) findViewById(R.id.cb_remember);
+		
+		
+	}
+
+	public void login(View view){
+		if(cb_remember.isChecked()){
+			Log.i(TAG,"记住密码");
+			et_name.getText().toString().trim();
+			
+			
+		}else{
+			Log.i(TAG,"不需要记住密码");
+		}
+		
+		
+		
+	}
+
+}

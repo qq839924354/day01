@@ -1,0 +1,22 @@
+package com.itheima.xml.service;
+
+import java.io.File;
+import java.util.List;
+
+import com.itheima.xml.domain.SmsInfo;
+
+public class SmsUtils {
+
+	/**
+	 * 短信备份的工具方法
+	 * @param file 短信备份到哪个文件里面
+	 * @param smsInfos 要备份的短信对象的集合.
+	 */
+	public void backUpSms(File file, List<SmsInfo> smsInfos) {
+		//xml文件的序列号器  帮助生成一个xml文件
+		
+		
+		
+		
+	}
+}

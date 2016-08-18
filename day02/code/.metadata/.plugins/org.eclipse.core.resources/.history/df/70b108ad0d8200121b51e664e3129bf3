@@ -1,0 +1,18 @@
+package com.itheima.service;
+
+public class CalcService {
+
+	/**
+	 * 相加的业务方法
+	 * @param x 第一个int
+	 * @param y 第二个int
+	 * @return
+	 */
+	public int add(int x ,int y){
+		
+		return x+y;
+		
+	}
+	
+	
+}

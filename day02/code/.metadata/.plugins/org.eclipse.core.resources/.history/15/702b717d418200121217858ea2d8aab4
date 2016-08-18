@@ -1,0 +1,34 @@
+package com.itheima.weather.domain;
+
+public class Weather {
+	private int wendu;
+	private int wind;
+	private int type;
+	private int id;
+	public int getWendu() {
+		return wendu;
+	}
+	public void setWendu(int wendu) {
+		this.wendu = wendu;
+	}
+	public int getWind() {
+		return wind;
+	}
+	public void setWind(int wind) {
+		this.wind = wind;
+	}
+	public int getType() {
+		return type;
+	}
+	public void setType(int type) {
+		this.type = type;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
+}

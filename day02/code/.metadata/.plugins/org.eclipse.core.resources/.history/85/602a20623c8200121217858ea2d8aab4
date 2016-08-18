@@ -1,0 +1,5 @@
+package com.itheima.weather.service;
+
+public class WeatherService {
+
+}

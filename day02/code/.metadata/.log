@@ -1,0 +1,165 @@
+!SESSION 2013-03-01 08:53:36.937 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2013-03-01 08:53:46.718
+!MESSAGE DDMS files not found: C:\Documents and Settings\Administrator\桌面\adt-bundle-windows-x86\adt-bundle-windows-x86\eclipse\platform-tools\adb.exe C:\Documents and Settings\Administrator\桌面\adt-bundle-windows-x86\adt-bundle-windows-x86\eclipse\tools\hprof-conv.exe C:\Documents and Settings\Administrator\桌面\adt-bundle-windows-x86\adt-bundle-windows-x86\eclipse\tools\traceview.bat 
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 09:15:04.484
+!MESSAGE Failed to load properties file for project 'junit'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 09:25:27.687
+!MESSAGE Failed to load properties file for project 'test'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 09:41:02.562
+!MESSAGE Failed to load properties file for project 'Login'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:43:43.000
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/input_name
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:43:43.015
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/input_password
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:39.187
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/input_name
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:39.187
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/input_password
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:39.203
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/remember_pwd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:39.203
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/login
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:49.187
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/input_name
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:49.203
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/input_password
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:49.203
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/remember_pwd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-03-01 09:44:49.203
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/login
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 11:14:37.171
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Settings/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1306)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-03-01 11:14:37.171
+!MESSAGE Resource '/Settings/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 11:27:37.531
+!MESSAGE Failed to load properties file for project 'GetSDSize'
+!SESSION 2013-03-01 14:03:19.406 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 14:10:53.968
+!MESSAGE Failed to load properties file for project 'xml'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 14:48:31.109
+!MESSAGE Failed to load properties file for project 'weather'
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-03-01 14:49:01.968
+!MESSAGE No valid Android XML Editor Delegate found for file /weather/src/weather.xml [Res null, type null]
+
+!ENTRY org.eclipse.ui 4 4 2013-03-01 15:38:37.343
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2013-03-01 15:45:27.484
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 2426.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:171)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:180)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:177)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:208)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:599)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:626)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.getJavaTypes(JDIDebugTarget.java:1632)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:289)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 15:49:12.187
+!MESSAGE Failed to load properties file for project 'other'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 16:16:23.015
+!MESSAGE Failed to load properties file for project 'TestMode'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-03-01 16:17:01.250
+!MESSAGE Could not obtain indentation
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1055)
+	at org.eclipse.jface.text.TreeLineTracker.getLineInformationOfOffset(TreeLineTracker.java:1151)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineInformationOfOffset(AbstractLineTracker.java:145)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineInformationOfOffset(BasicStructuredDocument.java:1474)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.getIndentAtOffset(AndroidXmlEditor.java:1527)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.getIndent(AndroidXmlEditor.java:1511)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.getIndent(AndroidXmlEditor.java:1496)
+	at com.android.ide.eclipse.adt.internal.editors.uimodel.UiElementNode.createXmlNode(UiElementNode.java:1017)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gre.NodeProxy.insertOrAppend(NodeProxy.java:309)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gre.NodeProxy.appendChild(NodeProxy.java:249)
+	at com.android.ide.common.layout.RadioGroupRule.onCreate(RadioGroupRule.java:42)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gre.RulesEngine.callCreateHooks(RulesEngine.java:553)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gre.RulesEngine.access$0(RulesEngine.java:526)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gre.RulesEngine$1.run(RulesEngine.java:537)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1037)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:948)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gre.RulesEngine.callCreateHooks(RulesEngine.java:534)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gre.RulesEngine.callCreateHooks(RulesEngine.java:521)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl$DescDragSourceListener.renderPreview(PaletteControl.java:976)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl$DescDragSourceListener.createDragImage(PaletteControl.java:855)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl$DescDragSourceListener.dragStart(PaletteControl.java:761)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:34)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:296)
+	at org.eclipse.swt.dnd.DragSource.access$0(DragSource.java:289)
+	at org.eclipse.swt.dnd.DragSource$1.handleEvent(DragSource.java:172)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)

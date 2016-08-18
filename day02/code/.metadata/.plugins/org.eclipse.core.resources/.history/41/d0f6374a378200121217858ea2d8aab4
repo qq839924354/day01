@@ -1,0 +1,9 @@
+package com.itheima.xml.domain;
+
+public class SmsInfo {
+	private String body;
+	private String number;
+	private int type;
+	
+	
+}

@@ -1,0 +1,64 @@
+package com.itheima.login;
+
+import com.itheima.login.service.SaveService;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	private static final String TAG = "MainActivity";
+	private EditText et_name;
+	private EditText et_password;
+	private CheckBox cb_remember;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		et_name = (EditText) findViewById(R.id.et_name);
+		et_password = (EditText) findViewById(R.id.et_password);
+		cb_remember = (CheckBox) findViewById(R.id.cb_remember);
+		
+		//检查 文件里面是否 有 密码信息 
+		try {
+			String result = SaveService.readFromRom(this);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void login(View view){
+		String name  =et_name.getText().toString().trim();
+		String password  =et_password.getText().toString().trim();
+		if(TextUtils.isEmpty(name)||TextUtils.isEmpty(password)){
+			Toast.makeText(this, R.string.error_msg, Toast.LENGTH_SHORT).show();
+			return;
+		}
+		if(cb_remember.isChecked()){
+			Log.i(TAG,"记住密码");
+			Log.d(TAG,"NAME="+name);
+			Log.d(TAG,"PASSWORD="+password);
+			try {
+				SaveService.saveToRom(this, name, password);
+				Toast.makeText(this, "保存用户名密码 成功", Toast.LENGTH_LONG).show();
+			} catch (Exception e) {
+				e.printStackTrace();
+				Toast.makeText(this, "保存用户名密码 失败", Toast.LENGTH_LONG).show();
+			}
+			
+		}else{
+			Log.i(TAG,"不需要记住密码");
+		}
+		
+		
+	}
+
+}

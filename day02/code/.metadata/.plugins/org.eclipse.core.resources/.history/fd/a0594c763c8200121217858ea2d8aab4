@@ -1,0 +1,15 @@
+package com.itheima.weather.service;
+
+import java.io.InputStream;
+import java.util.List;
+
+public class WeatherService {
+	/**
+	 * 
+	 * @param is
+	 * @return
+	 */
+	public List<Weather> getWeather(InputStream is) {
+
+	}
+}

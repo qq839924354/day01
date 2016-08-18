@@ -1,0 +1,43 @@
+package com.itheima.weather;
+
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.itheima.weather.domain.Weather;
+import com.itheima.weather.service.WeatherService;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		
+		TextView tv = (TextView) findViewById(R.id.tv_weather);
+		
+		try {
+			StringBuilder sb = new StringBuilder();
+			List<Weather> weatherinfos = WeatherService.getWeather(getClassLoader().getResourceAsStream("weather.xml"));
+			for(Weather weather : weatherinfos){
+				sb.append(weather.toString());
+				sb.append("\n");
+				
+			}
+			tv.setText(sb.toString());
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			Toast.makeText(this, "解析天气信息失败", 0).show();
+		}
+		
+		
+	}
+
+
+
+}

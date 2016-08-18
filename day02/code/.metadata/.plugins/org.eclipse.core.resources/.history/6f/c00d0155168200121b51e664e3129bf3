@@ -1,0 +1,24 @@
+package com.itheima.login.service;
+
+import java.io.File;
+import java.io.FileOutputStream;
+
+import android.content.Context;
+
+public class SaveService {
+	/**
+	 * 保存数据到手机rom的文件里面.
+	 * @param context 应用程序的上下文 提供环境
+	 * @param name 用户名
+	 * @param password 密码
+	 * @throws Exception
+	 */
+	public void saveToRom(Context context, String name , String password) throws Exception{
+		//File file = new File("/data/data/com.itheima.login/files/pwd.txt");
+		File file = new File(context.getFilesDir(),"pwd.txt");
+		FileOutputStream fos = new FileOutputStream(file);
+		fos.write(buffer);
+		
+		
+	}
+}

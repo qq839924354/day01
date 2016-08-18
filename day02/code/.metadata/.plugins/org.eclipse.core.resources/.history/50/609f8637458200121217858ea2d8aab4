@@ -1,0 +1,29 @@
+package com.itheima.other;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+	public void readPravite(View view){
+		File file = new File("/data/data/com.itheima.login/shared_prefs/sp.xml");
+		FileInputStream fis = new FileInputStream(file);
+		
+	}
+
+	public void readWorldReabable(View view){
+		
+		
+		
+	}
+}

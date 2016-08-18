@@ -1,0 +1,56 @@
+package com.itheima.xml.service;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.List;
+
+import org.xmlpull.v1.XmlSerializer;
+
+import android.util.Xml;
+
+import com.itheima.xml.domain.SmsInfo;
+
+public class SmsUtils {
+
+	/**
+	 * 短信备份的工具方法
+	 * @param file 短信备份到哪个文件里面
+	 * @param smsInfos 要备份的短信对象的集合.
+	 */
+	public static void backUpSms(File file, List<SmsInfo> smsInfos) throws Exception{
+		//xml文件的序列号器  帮助生成一个xml文件
+		FileOutputStream fos = new FileOutputStream(file);
+		//1.获取到xml的序列号器
+		XmlSerializer serializer = Xml.newSerializer();
+		//2.序列化器的初始化
+		serializer.setOutput(fos, "utf-8"); //文件的编码方式 utf-8
+		//3.创建xml文件
+		serializer.startDocument("utf-8", true);
+		serializer.startTag(null, "smss");
+		
+		//循环的把所有的短信数据都写到 xml文件里面
+		for(SmsInfo info: smsInfos){
+			serializer.startTag(null, "sms");
+			serializer.attribute(null, "id", String.valueOf(info.getId()));
+			
+			serializer.startTag(null, "body");
+			serializer.text(info.getBody());
+			serializer.endTag(null, "body");
+			
+			serializer.startTag(null, "type");
+			serializer.text(info.getType()+"");
+			serializer.endTag(null, "type");
+			
+			serializer.startTag(null, "number");
+			serializer.text(info.getNumber());
+			serializer.endTag(null, "number");
+			
+			serializer.endTag(null, "sms");
+		}
+		serializer.endTag(null, "smss");
+		serializer.endDocument();
+		
+		fos.flush();
+		fos.close();
+	}
+}

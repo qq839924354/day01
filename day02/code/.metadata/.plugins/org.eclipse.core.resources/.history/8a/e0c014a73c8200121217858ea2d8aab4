@@ -1,0 +1,8 @@
+package com.itheima.weather.domain;
+
+public class Weather {
+	private int wendu;
+	private int wind;
+	private int type;
+	private int id;
+}

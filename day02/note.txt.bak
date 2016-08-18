@@ -1,0 +1,32 @@
+白盒测试:
+知道程序源代码.
+
+	根据测试的粒度分为不同的类型
+        单元测试 unit test 
+        功能测试 function test
+        集成测试 intergation test
+        
+        冒烟测试 smoke test
+        压力测试 pressure test
+
+
+黑盒测试:
+8k
+不知道程序的源代码,主要操作应用程序的业务逻辑.
+
+
+logcat 
+
+System.out.println();
+
+
+verbose  提示
+debug    调试
+info    
+warn     警告
+error    错误
+
+
+
+getFileDir()   /data/data/<当前应用包名>/files/ 
+getCacheDir()  /data/data/<当前应用程序包名>/cache/
