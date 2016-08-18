@@ -1,0 +1,80 @@
+4.2      apilevel  17
+
+2.3.3              10
+
+2.3.1               9
+
+2.2                 8
+
+
+
+cpu 
+
+intel   处理器架构 x86 
+AMD  
+
+arm 处理器厂商 但是 不产处理器
+买处理器的架构
+摩托罗拉
+三星
+
+
+google api.
+google地图. 
+mapview'
+
+
+
+add-ons 目录:
+存放一些扩展工具  驱动.
+
+extras 
+附加的工具
+支持jar包  web摄像头的驱动.
+
+platform 开发支持的平台
+
+sample 实例代码
+
+
+platform-tools 平台相关的工具.
+
+
+adb.exe  android程序的调试桥.
+
+adb install xxx.apk
+adb uninstall com.yingyonghui.market
+
+
+assets 目录: 资产目录 存放一些应用程序的资源文件
+android.jar  开发以来的jar包 sdk.
+libs 目录 三方的支持jar包 会自动被添加到bulid path里面
+res 应用程序的资源文件
+drawable 目录 存在图片资源
+AndroidManifest.xml 应用程序的清单文件.
+
+
+main 函数
+
+1.读取apk文件的 清单文件.
+
+
+
+软件安装的过程:
+
+0.开发工具帮助我们生成apk文件 (安装包)
+1.拷贝一些文件到系统的某个目录   拷贝apk文件到 /data/app/目录下 创建一个文件夹 /data/data/com.itheima.helloworld/ 保存数据
+2.在系统的注册表里面配置一些信息.
+
+
+
+编译资源文件 生成对应的R文件
+             ->  .class	      
+          
+打包  .java -> .class -> .dex 
+ 
+aapt.exe android application package tools 工具
+ 
+
+ddms : dalvik debug manager system
+
