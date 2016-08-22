@@ -1,0 +1,22 @@
+package com.itheima.other;
+
+import android.net.Uri;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.ContentResolver;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		//得到内容提供者的解析器  中间人
+		ContentResolver resolver = getContentResolver();
+		Uri uri = Uri.parse("content://com.itheima.note.noteprovider/query");
+		Cursor cursor = resolver.query(uri, null, null, null, null);
+		
+	}
+
+}

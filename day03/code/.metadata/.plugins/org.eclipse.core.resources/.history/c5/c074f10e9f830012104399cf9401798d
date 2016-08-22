@@ -1,0 +1,33 @@
+package com.itheima.note.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class NoteSQLiteOpenHelper extends SQLiteOpenHelper {
+
+	/**
+	 * context 上下文
+	 * name 数据库的名称
+	 * cursorfactory  游标工厂  一般设置null 默认游标工厂
+	 * 
+	 * @param context
+	 */
+	public NoteSQLiteOpenHelper(Context context) {
+		super(context, "note.db", null, 1);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.itheima.note.test;
+
+import com.itheima.note.db.NoteSQLiteOpenHelper;
+
+import android.test.AndroidTestCase;
+
+public class TestNoteOpenHelper extends AndroidTestCase {
+	
+	
+	public void testCreateDB() throws Exception{
+		NoteSQLiteOpenHelper helper = new NoteSQLiteOpenHelper(getContext());
+		
+		
+	}
+}

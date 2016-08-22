@@ -1,0 +1,16 @@
+package com.itheima.note.test;
+
+import com.itheima.note.db.NoteSQLiteOpenHelper;
+
+import android.test.AndroidTestCase;
+
+public class TestNoteOpenHelper extends AndroidTestCase {
+	
+	
+	public void testCreateDB() throws Exception{
+		//getContext 这个方法 是获取到 测试框架的一个虚拟的 模拟的假的上下文.
+		NoteSQLiteOpenHelper helper = new NoteSQLiteOpenHelper(this.getContext());
+		
+		
+	}
+}

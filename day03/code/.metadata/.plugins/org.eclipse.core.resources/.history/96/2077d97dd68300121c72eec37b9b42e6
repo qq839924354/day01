@@ -1,0 +1,28 @@
+package com.itheima.readsms;
+
+import android.app.Activity;
+import android.content.ContentResolver;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private TextView tv;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		tv = (TextView) findViewById(R.id.tv_content);
+	}
+
+	public void click(View view){
+		//1.利用内容提供者  中间人 获取用户的短信数据.
+		ContentResolver resolver  = getContentResolver();
+		Uri uri = Uri.parse("content://sms/"); //根据分析 代表的是所有的短信的路径
+		
+		resolver.query(uri, projection, selection, selectionArgs, sortOrder);
+		
+		
+	}
+}

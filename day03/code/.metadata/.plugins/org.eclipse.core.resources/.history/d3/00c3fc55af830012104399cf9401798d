@@ -1,0 +1,65 @@
+package com.itheima.listdemo;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Base64;
+import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private ListView lv;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		lv = (ListView) findViewById(R.id.lv);
+		//设置listview的数据了.
+		// 采用 mvc的方式 设计listview控件
+		//model 数据
+		//view  listview的控件
+		//control 控制
+		
+		lv.setAdapter(adapter);
+		
+		
+	}
+	
+	
+	private class MyAdapter extends BaseAdapter{
+
+		/**
+		 * 控制listview里面有多个条目.
+		 */
+		@Override
+		public int getCount() {
+			return 5;
+		}
+		
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			TextView  tv   = new  TextView(this);
+			
+			
+			
+		}
+		
+		
+		@Override
+		public Object getItem(int position) {
+			return null;
+		}
+
+		@Override
+		public long getItemId(int position) {
+			return 0;
+		}
+
+		
+	}
+
+}

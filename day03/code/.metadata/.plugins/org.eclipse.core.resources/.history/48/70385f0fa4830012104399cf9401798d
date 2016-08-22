@@ -1,0 +1,21 @@
+package com.itheima.note.db.dao;
+
+/**
+ * 记账本的dao
+ * 
+ * @author Administrator
+ * 
+ */
+public class NoteDao {
+
+	/**
+	 * 添加一条账目信息 到数据库
+	 * @param name 花销的名称
+	 * @param money 金额
+	 */
+	public void add(String name, float money) {
+		
+		
+	}
+
+}

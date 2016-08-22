@@ -1,0 +1,13 @@
+package com.itheima.note.test;
+
+import android.test.AndroidTestCase;
+
+public class TestNoteOpenHelper extends AndroidTestCase {
+	
+	
+	public void testCreateDB() throws Exception{
+		
+		
+		
+	}
+}

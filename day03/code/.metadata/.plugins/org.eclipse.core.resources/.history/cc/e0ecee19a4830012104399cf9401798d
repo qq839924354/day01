@@ -1,0 +1,28 @@
+package com.itheima.note.db.dao;
+
+import com.itheima.note.db.NoteSQLiteOpenHelper;
+
+/**
+ * 记账本的dao
+ * 
+ * @author Administrator
+ * 
+ */
+public class NoteDao {
+//因为 任何一个操作都是需要 得到 NoteSQLiteOpenHelper helper
+//把他放在构造方法里面初始化
+	private Context context;
+	
+	
+	
+	/**
+	 * 添加一条账目信息 到数据库
+	 * @param name 花销的名称
+	 * @param money 金额
+	 */
+	public void add(String name, float money) {
+		 = new NoteSQLiteOpenHelper();
+		
+	}
+
+}

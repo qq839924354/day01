@@ -1,0 +1,37 @@
+package com.itheima.note.db.dao;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.itheima.note.db.NoteSQLiteOpenHelper;
+
+public class NoteDao2 {
+	private NoteSQLiteOpenHelper helper;
+
+	public NoteDao2(Context context) {
+		helper = new NoteSQLiteOpenHelper(context);
+	}
+	/**
+	 * 添加一条账目信息 到数据库
+	 * 
+	 * @param name
+	 *            花销的名称
+	 * @param money
+	 *            金额
+	 *            
+	 * @return true 插入成功 
+	 *         false 失败
+	 */
+	public boolean  add(String name, float money) {
+		SQLiteDatabase db = helper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put("name", name);
+		values.put("money", money);
+		db.insert("account", null, values);
+		
+		
+	}
+	
+	
+}

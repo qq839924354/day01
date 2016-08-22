@@ -1,0 +1,40 @@
+package com.itheima.note.domain;
+
+public class NoteBean {
+	private int id;
+	private float money;
+	private String name;
+	
+	@Override
+	public String toString() {
+		return "NoteBean [id=" + id + ", money=" + money + ", name=" + name
+				+ "]";
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public float getMoney() {
+		return money;
+	}
+	public void setMoney(float money) {
+		this.money = money;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public NoteBean(int id, float money, String name) {
+		this.id = id;
+		this.money = money;
+		this.name = name;
+	}
+	public NoteBean(){
+		
+	}
+	
+}

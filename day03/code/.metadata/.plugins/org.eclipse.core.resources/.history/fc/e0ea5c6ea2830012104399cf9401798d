@@ -1,0 +1,36 @@
+package com.itheima.note.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+public class NoteSQLiteOpenHelper extends SQLiteOpenHelper {
+
+	private static final String TAG = "NoteSQLiteOpenHelper";
+	/**
+	 * context 上下文 name 数据库的名称 cursorfactory 游标工厂 一般设置null 默认游标工厂 version 数据库的版本
+	 * 版本号从1开始的
+	 * 
+	 * @param context
+	 */
+	public NoteSQLiteOpenHelper(Context context) {
+		super(context, "note.db", null, 2);
+	}
+
+	/**
+	 * oncreate 方法 会在数据库第一创建的时候的是被调用 适合做数据库表结构的初始化
+	 */
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		Log.i(TAG, "oncreate 方法被调用了...");
+		db.execSQL("create table account (id integer primary key autoincrement , name  varchar(20), money varchar(20) )");
+	}
+	
+	@Override
+	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
+		Log.i(TAG,"onupdate 方法被调用了 ,在这个方法里面做更新数据库表结构的操作");
+	}
+
+}

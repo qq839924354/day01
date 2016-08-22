@@ -1,0 +1,5 @@
+package com.itheima.note.domain;
+
+public class NoteBean {
+
+}

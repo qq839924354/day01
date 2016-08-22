@@ -1,0 +1,76 @@
+package com.itheima.note.provider;
+
+import com.itheima.note.db.NoteSQLiteOpenHelper;
+
+import android.content.ContentProvider;
+import android.content.ContentValues;
+import android.content.UriMatcher;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
+
+public class NoteInfoProvider extends ContentProvider {
+
+	private static final int QUERY = 1;
+	private static final int INSERT = 2;
+	private static final int DELETE = 3;
+	private static final int UPDATE = 4;
+
+	// 参数code 代表如果uri不匹配的返回值
+	// 在当前应用程序的内部 声明一个路径的检查者
+	private static UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
+
+	static {
+		// 建立一个匹配规则
+		// 1.如果发现一个路径 com.itheima.note.noteprovider/query 查询的操作
+		matcher.addURI("com.itheima.note.noteprovider", "query", QUERY);
+		matcher.addURI("com.itheima.note.noteprovider", "insert", INSERT);
+		matcher.addURI("com.itheima.note.noteprovider", "delete", DELETE);
+		matcher.addURI("com.itheima.note.noteprovider", "update", UPDATE);
+	}
+
+	@Override
+	public boolean onCreate() {
+		return false;
+	}
+
+	/**
+	 * 内容提供者暴露的查询的方法.
+	 */
+	@Override
+	public Cursor query(Uri uri, String[] projection, String selection,
+			String[] selectionArgs, String sortOrder) {
+		// 1.重要的事情 ,检查 uri的路径.
+		int code = matcher.match(uri);
+		if(code==QUERY){
+			//查询处理
+			NoteSQLiteOpenHelper helper = new NoteSQLiteOpenHelper(getContext());
+			SQLiteDatabase db = helper.getReadableDatabase();
+			Cursor cursor = db.rawQuery("select * from account", null);
+			return cursor;
+		}else{
+			throw new IllegalArgumentException("路径不能被识别,我认识你...");
+		}
+	}
+	@Override
+	public String getType(Uri uri) {
+		return null;
+	}
+
+	@Override
+	public Uri insert(Uri uri, ContentValues values) {
+		return null;
+	}
+
+	@Override
+	public int delete(Uri uri, String selection, String[] selectionArgs) {
+		return 0;
+	}
+
+	@Override
+	public int update(Uri uri, ContentValues values, String selection,
+			String[] selectionArgs) {
+		return 0;
+	}
+
+}

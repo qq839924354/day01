@@ -1,0 +1,9 @@
+package com.itheima.note.domain;
+
+public class NoteBean {
+	private int id;
+	private float money;
+	private String name;
+	
+	
+}

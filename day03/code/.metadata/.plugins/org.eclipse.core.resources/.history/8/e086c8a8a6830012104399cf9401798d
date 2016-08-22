@@ -1,0 +1,16 @@
+package com.itheima.note.test;
+
+import com.itheima.note.db.dao.NoteDao;
+
+import android.test.AndroidTestCase;
+
+public class TestNoteDao extends AndroidTestCase {
+	
+	public void testAdd() throws Exception{
+		NoteDao dao = new NoteDao(getContext());
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,40 @@
+记账的程序.
+
+
+1. 名称  买书  
+2. 金额  30
+
+
+
+1. 数据按照格式 存起来.
+
+2. 数据在界面上展现出来.
+
+
+
+
+
+android下创建数据库的步骤:
+1.创建一个数据库打开的帮助类  继承SQLiteOpenHelper
+2. 构造方法 设置数据库文件的名称  设置游标工厂 null  数据库的版本 1
+3. 填写 onCreate()方法  数据库表结构的初始化  数据库第一次被创建的时候 调用的方法
+4. helper.getReadabledatabase() 或者调用helper.getWriteabledatabase() 获取数据库的示例
+
+
+添加一条记录
+insert into account (name,money) values ('买饭','18')
+查询记录
+select * from account 
+更改一条记录
+update account set money ='19' where id='1'
+删除记录
+delete from account where id='1'
+
+
+javaweb 执行sql
+1.加载jdbc驱动.
+2.准备sql
+3.执行sql
+
+
+

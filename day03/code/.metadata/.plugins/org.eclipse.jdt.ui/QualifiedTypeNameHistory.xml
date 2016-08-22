@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.itheima.note.db.dao.NoteDao"/>
+<fullyQualifiedTypeName name="android.widget.ListAdapter"/>
+<fullyQualifiedTypeName name="android.util.Base64"/>
+<fullyQualifiedTypeName name="com.itheima.listdemo.MainActivity"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="com.itheima.listdemo.MainActivity.MyAdapter"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
+<fullyQualifiedTypeName name="com.itheima.note.db.dao.NoteDao2"/>
+<fullyQualifiedTypeName name="com.itheima.note.MainActivity.MyAdapter"/>
+<fullyQualifiedTypeName name="com.itheima.note.R.layout"/>
+<fullyQualifiedTypeName name="org.apache.http.conn.ManagedClientConnection"/>
+<fullyQualifiedTypeName name="com.itheima.note.MainActivity"/>
+<fullyQualifiedTypeName name="com.itheima.note.domain.NoteBean"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="android.widget.SimpleAdapter"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.itheima.listdemo.R.layout"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.itheima.listdemo.R.id"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="android.content.UriMatcher"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="com.itheima.note.db.NoteSQLiteOpenHelper"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="android.content.ContentResolver"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="android.content.ContentValues"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>

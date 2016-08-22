@@ -1,0 +1,5 @@
+package com.itheima.note.db.dao;
+
+public class NoteDao2 {
+
+}

@@ -1,0 +1,13 @@
+package com.itheima.note.test;
+
+import android.test.AndroidTestCase;
+
+public class TestNoteDao extends AndroidTestCase {
+	
+	public void testAdd() throws Exception{
+		
+		
+		
+	}
+	
+}

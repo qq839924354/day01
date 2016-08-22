@@ -1,0 +1,16 @@
+package com.itheima.note.db.dao;
+
+import android.content.Context;
+
+import com.itheima.note.db.NoteSQLiteOpenHelper;
+
+public class NoteDao2 {
+	private NoteSQLiteOpenHelper helper;
+
+	public NoteDao(Context context) {
+		helper = new NoteSQLiteOpenHelper(context);
+	}
+	
+	
+	
+}
